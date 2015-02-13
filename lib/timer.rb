@@ -1,6 +1,6 @@
 class Timer
   def self.starter
-    File.open(".timer", "w")
+    File.open(".timer", "a")
     "Timer started. Go!!!"
   end
 

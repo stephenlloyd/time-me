@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'time-me'
-  s.version     = '0.0.0'
+  s.version     = '0.0.1'
   s.date        = '2015-02-12'
   s.summary     = "times anything"
   s.description = "times anything when you type start or stop"

@@ -6,7 +6,7 @@ describe Timer do
     before{allow(File).to receive(:open)}
 
     it "creates a file" do
-      expect(File).to receive(:open).with ".timer", "w"
+      expect(File).to receive(:open).with ".timer", "a"
       Timer.starter
     end
 
