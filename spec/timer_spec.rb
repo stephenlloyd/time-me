@@ -31,7 +31,7 @@ describe Timer do
         Timer.stoper
     end
 
-    it "saves the file when stopeed" do
+    it "saves the file when stoped" do
         freeze_time
         expect(File).to receive(:open).with ".timer", "a"
         Timer.stoper
@@ -42,7 +42,7 @@ describe Timer do
         expect(Timer.stoper).to eq "It took 1 minutes 5 seconds."
     end
 
-    it "errors gracefully if there isnt's file" do
+    it "errors gracefully if there isnt's a file" do
       expect(Timer.stoper).to eq "You haven't started yet. Type 'starter' to begin and 'stoper' to end"
     end
 
